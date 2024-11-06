@@ -7,7 +7,7 @@
     <script src="busca.js"></script>
     <title>PCStore</title>
 </head>
-<body>
+<body class="search">
     <header>
         <a href="index.html "><img src="imgs/logo.png"></a>
         <nav class="navigation">
@@ -16,12 +16,121 @@
         </nav>
     </header>
 
+    <div></div>
 
-    <input type="text" id="search" placeholder="Buscar peças...">
+    <div class="container">
 
-    <p id="searchResult" style="display: none;"></p>
+    
+        <div class="filter-body">
+            <h3 class="filter-title">Filtros</h3>
+            <hr>
+            <div class="filter-group">
+                <h3 class="filter-name">Preço</h3>
+                <input type="number" id="minPrice" min="0" max="500" value="0">
+                <label for="minPrice"><span id="minValue">A partir de R$0</span></label>
 
+                <br>
 
+                <input type="number" id="maxPrice" min="0" max="500" value="500">
+                <label for="minPrice"><span id="maxValue">Até R$500</span></label>
+            </div>
+            <hr>
+            <div class="filter-group">
+                <h3 class="filter-name">Tipo de Produto</h3>
+                <label><input type="checkbox" class="productType" id="CPU"> Processador</label>
+                <br>
+                <label><input type="checkbox" class="productType" id="GPU"> Placa de Vídeo</label>
+                <br>
+                <label><input type="checkbox" class="productType" id="RAM"> Memória RAM</label>
+                <br>
+                <label><input type="checkbox" class="productType" id="motherBoard"> Placa Mãe</label>
+                <br>
+                <label><input type="checkbox" class="productType" id="SSD-HDD"> SSD/HDD</label>
+                <br>
+                <label><input type="checkbox" class="productType" id="PSU"> Fonte de Alimentação</label>
+                <br>
+                <label><input type="checkbox" class="productType" id="monitor"> Monitor</label>
+            </div>
+
+            <div class="filter-group" id="CPUBrands" style="display: none;">
+                <hr>
+                <h3 class="filter-name">Marcas</h3>
+                <label><input type="checkbox" class="CPUBrandType" id="intel"> Intel</label>
+                <br>
+                <label><input type="checkbox" class="CPUBrandType" id="AMDCPU"> AMD</label>
+            </div>
+            <div class="filter-group" id="IntelModels" style="display: none;">
+                <hr>
+                <h3 class="filter-name">Modelos</h3>
+                <label><input type="checkbox" class="CPUModel" id="i3"> i3</label>
+                <br>
+                <label><input type="checkbox" class="CPUModel" id="i5"> i5</label>
+                <br>
+                <label><input type="checkbox" class="CPUModel" id="i7"> i7</label>
+                <br>
+                <label><input type="checkbox" class="CPUModel" id="i9"> i9</label>
+            </div>
+            <div class="filter-group" id="AMDModelsCPU" style="display: none;">
+                <hr>
+                <h3 class="filter-name">Modelos</h3>
+                <label><input type="checkbox" class="CPUModel" id="ryzen3"> Ryzen 3</label>
+                <br>
+                <label><input type="checkbox" class="CPUModel" id="ryzen5"> Ryzen 5</label>
+                <br>
+                <label><input type="checkbox" class="CPUModel" id="ryzen7"> Ryzen 7</label>
+                <br>
+                <label><input type="checkbox" class="CPUModel" id="ryzen9"> Ryzen 9</label>
+            </div>
+
+            <div class="filter-group" id="GPUBrands" style="display: none;">
+                <hr>
+                <h3 class="filter-name">Marcas</h3>
+                <label><input type="checkbox" class="GPUBrandType" id="Nvidia"> Nvidia</label>
+                <br>
+                <label><input type="checkbox" class="GPUBrandType" id="AMDGPU"> AMD</label>
+            </div>
+            <div class="filter-group" id="NvidiaModels" style="display: none;">
+                <hr>
+                <h3 class="filter-name">Modelos</h3>
+                <label><input type="checkbox" class="GPUModel" id="4050"> RTX 4050</label>
+                <br>
+                <label><input type="checkbox" class="GPUModel" id="4060"> RTX 4060</label>
+                <br>
+                <label><input type="checkbox" class="GPUModel" id="4070"> RTX 4070</label>
+                <br>
+                <label><input type="checkbox" class="GPUModel" id="4080"> RTX 4080</label>
+                <br>
+                <label><input type="checkbox" class="GPUModel" id="4090"> RTX 4090</label>
+            </div>
+            <div class="filter-group" id="AMDModelsGPU" style="display: none;">
+                <hr>
+                <h3 class="filter-name">Modelos</h3>
+                <label><input type="checkbox" class="GPUModel" id="7600"> RX 7600</label>
+                <br>
+                <label><input type="checkbox" class="GPUModel" id="7600XT"> RX 7600 XT</label>
+                <br>
+                <label><input type="checkbox" class="GPUModel" id="7700XT"> RX 7700 XT</label>
+                <br>
+                <label><input type="checkbox" class="GPUModel" id="7800XT"> RX 7800 XT</label>
+                <br>
+                <label><input type="checkbox" class="GPUModel" id="7900XT"> RX 7900 XT</label>
+            </div>
+            
+        </div>
+
+        <div class="src-body">
+
+            <input type="text" class="search-box" id="search" placeholder="Buscar peças...">
+
+        </br>
+
+            <p id="searchResult" style="display: none; font-size: 1.4em; font-family: 'Poppins', sans-serif;"></p>
+
+        </div>
+
+        
+
+    </div>
 
     <footer>
         <script src="jquery.js"></script>
