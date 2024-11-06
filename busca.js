@@ -17,10 +17,13 @@ $(document).ready(function(){
         const maxValue = $('#maxPrice').val();
 
         if(parseInt(maxValue) < parseInt(minValue)){
-            $('#minValue').text("Erro: valor mínimo precisa ser menor que valor máximo");
-            $('#maxValue').text("Erro: valor máximo precisa ser maior que valor mínimo");
+            $('#minValue').text("Erro");
+            $('#maxValue').text("Erro");
+            $('#errorValue').show();
         } else {
             $('#minValue').text("A partir de R$" + minValue);
+            $('#maxValue').text("Até R$" + maxValue);
+            $('#errorValue').hide();
         }
 
         
@@ -32,10 +35,13 @@ $(document).ready(function(){
         const maxValue = $('#maxPrice').val();
 
         if(parseInt(maxValue) < parseInt(minValue)){
-            $('#minValue').text("Erro: valor mínimo precisa ser menor que valor máximo");
-            $('#maxValue').text("Erro: valor máximo precisa ser maior que valor mínimo");
+            $('#minValue').text("Erro");
+            $('#maxValue').text("Erro");
+            $('#errorValue').show();
         } else {
+            $('#minValue').text("A partir de R$" + minValue);
             $('#maxValue').text("Até R$" + maxValue);
+            $('#errorValue').hide();
         }
 
         
@@ -71,6 +77,57 @@ $(document).ready(function(){
             $('#AMDModelsGPU').hide();
         }
 
+        if ($('#RAM').is(':checked')) {
+            $('#RAMSizes').show();
+        } else {
+            $('#RAMSizes').hide();
+
+            $('.RAMSize').prop('checked', false);
+        }
+
+        if ($('#motherBoard').is(':checked')) {
+            $('#MBBrands').show();
+        } else {
+            $('#MBBrands').hide();
+
+            $('.MBBrand').prop('checked', false);
+        }
+
+        if ($('#SSD-HDD').is(':checked')) {
+            $('#SHDSizes').show();
+            $('#SHDSpeeds').show();
+        } else {
+            $('#SHDSizes').hide();
+            $('#SHDSpeeds').hide();
+
+            $('.SHDSize').prop('checked', false);
+            $('.SHDSpeed').prop('checked', false);
+        }
+
+        if ($('#PSU').is(':checked')) {
+            $('#PSUPowers').show();
+        } else {
+            $('#PSUPowers').hide();
+
+            $('.PSUPower').prop('checked', false);
+        }
+
+        if ($('#monitor').is(':checked')) {
+            $('#monitorSizes').show();
+            $('#monitorResolutions').show();
+            $('#monitorHdr').show();
+        } else {
+            $('#monitorSizes').hide();
+            $('#monitorResolutions').hide();
+            $('#monitorHdr').hide();
+
+            $('.monitorSize').prop('checked', false);
+            $('.monitorResolution').prop('checked', false);
+            $('.monitorHdr').prop('checked', false);
+        }
+
+
+        
     });
 
     $('.CPUBrandType').on('change', function() {
@@ -118,6 +175,54 @@ $(document).ready(function(){
     $('.GPUModel').on('change', function() {
         if ($(this).is(':checked')) {
             $('.GPUModel').not(this).prop('checked', false);
+        }
+    })
+
+    $('.RAMSize').on('change', function() {
+        if ($(this).is(':checked')) {
+            $('.RAMSize').not(this).prop('checked', false);
+        }
+    })
+
+    $('.MBBrand').on('change', function() {
+        if ($(this).is(':checked')) {
+            $('.MBBrand').not(this).prop('checked', false);
+        }
+    })
+
+    $('.SHDSize').on('change', function() {
+        if ($(this).is(':checked')) {
+            $('.SHDSize').not(this).prop('checked', false);
+        }
+    })
+
+    $('.SHDSpeed').on('change', function() {
+        if ($(this).is(':checked')) {
+            $('.SHDSpeed').not(this).prop('checked', false);
+        }
+    })
+
+    $('.PSUPower').on('change', function() {
+        if ($(this).is(':checked')) {
+            $('.PSUPower').not(this).prop('checked', false);
+        }
+    })
+
+    $('.monitorSize').on('change', function() {
+        if ($(this).is(':checked')) {
+            $('.monitorSize').not(this).prop('checked', false);
+        }
+    })
+
+    $('.monitorResolution').on('change', function() {
+        if ($(this).is(':checked')) {
+            $('.monitorResolution').not(this).prop('checked', false);
+        }
+    })
+
+    $('.monitorHdr').on('change', function() {
+        if ($(this).is(':checked')) {
+            $('.monitorHdr').not(this).prop('checked', false);
         }
     })
 

@@ -30,6 +30,7 @@ body.index {
 
 .container {
     margin-top: 50px;
+    margin-bottom: 50px;
     display: flex;
     align-items: flex-start;
     width: 90%;
@@ -110,7 +111,7 @@ body.index {
 
 .filter-title {
     font-weight: normal;
-    font-size: 1.1em;
+    font-size: 1.3em;
     margin-top: 5px;
     margin-left: 18px;
     margin-bottom: 5px;
@@ -126,4 +127,9 @@ body.index {
     font-size: 1em;
     margin-top: 5px;
     margin-bottom: 5px;
+}
+
+h3#errorValue {
+    font-weight: normal;
+    font-size: 1em;
 }

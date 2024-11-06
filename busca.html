@@ -26,15 +26,18 @@
             <hr>
             <div class="filter-group">
                 <h3 class="filter-name">Preço</h3>
-                <input type="number" id="minPrice" min="0" max="500" value="0">
+                <input type="number" id="minPrice" min="0" max="2000" value="0">
                 <label for="minPrice"><span id="minValue">A partir de R$0</span></label>
 
                 <br>
 
-                <input type="number" id="maxPrice" min="0" max="500" value="500">
-                <label for="minPrice"><span id="maxValue">Até R$500</span></label>
+                <input type="number" id="maxPrice" min="0" max="2000" value="2000">
+                <label for="minPrice"><span id="maxValue">Até R$2000</span></label>
+
+                <h3 id="errorValue" style="display: none;">Valor mínimo deve ser menor que valor máximo</h3>
             </div>
             <hr>
+
             <div class="filter-group">
                 <h3 class="filter-name">Tipo de Produto</h3>
                 <label><input type="checkbox" class="productType" id="CPU"> Processador</label>
@@ -115,7 +118,95 @@
                 <br>
                 <label><input type="checkbox" class="GPUModel" id="7900XT"> RX 7900 XT</label>
             </div>
+
+            <div class="filter-group" id="RAMSizes" style="display: none;">
+                <hr>
+                <h3 class="filter-name">Tamanho</h3>
+                <label><input type="checkbox" class="RAMSize" id="RAM4GB"> 4GB</label>
+                <br>
+                <label><input type="checkbox" class="RAMSize" id="RAM8GB"> 8GB</label>
+                <br>
+                <label><input type="checkbox" class="RAMSize" id="RAM16GB"> 16GB</label>
+                <br>
+                <label><input type="checkbox" class="RAMSize" id="RAM32GB"> 32GB</label>
+            </div>
+
+            <div class="filter-group" id="MBBrands" style="display: none;">
+                <hr>
+                <h3 class="filter-name">Suporte de Processadores</h3>
+                <label><input type="checkbox" class="MBBrand" id="IntelMB"> Intel</label>
+                <br>
+                <label><input type="checkbox" class="MBBrand" id="AMDMB"> AMD</label>
+            </div>
+
+            <div class="filter-group" id="SHDSizes" style="display: none;">
+                <hr>
+                <h3 class="filter-name">Tamanho</h3>
+                <label><input type="checkbox" class="SHDSize" id="SHD128GB"> 128GB</label>
+                <br>
+                <label><input type="checkbox" class="SHDSize" id="SHD256GB"> 256GB</label>
+                <br>
+                <label><input type="checkbox" class="SHDSize" id="SHD512GB"> 512GB</label>
+                <br>
+                <label><input type="checkbox" class="SHDSize" id="SHD1TB"> 1TB</label>
+                <br>
+                <label><input type="checkbox" class="SHDSize" id="SHD2TB"> 2TB</label>
+            </div>
+            <div class="filter-group" id="SHDSpeeds" style="display: none;">
+                <hr>
+                <h3 class="filter-name">Velocidade</h3>
+                <label><input type="checkbox" class="SHDSpeed" id="menos1gb"> Menos que 1GB/s</label>
+                <br>
+                <label><input type="checkbox" class="SHDSpeed" id="1gb-2gb"> De 1GB/s até 2GB/s</label>
+                <br>
+                <label><input type="checkbox" class="SHDSpeed" id="2gb-3gb"> De 2GB/s até 3GB/s</label>
+                <br>
+                <label><input type="checkbox" class="SHDSpeed" id="mais3gb"> Mais do que 3GB/s</label>
+            </div>
             
+            <div class="filter-group" id="PSUPowers" style="display: none;">
+                <hr>
+                <h3 class="filter-name">Potência da Fonte</h3>
+                <label><input type="checkbox" class="PSUPower" id="menos450w"> Menos que 450W</label>
+                <br>
+                <label><input type="checkbox" class="PSUPower" id="450w-550w"> De 450W até 550W</label>
+                <br>
+                <label><input type="checkbox" class="PSUPower" id="550w-650w"> De 550W até 650W</label>
+                <br>
+                <label><input type="checkbox" class="PSUPower" id="650w-750w"> De 650W até 750W</label>
+                <br>
+                <label><input type="checkbox" class="PSUPower" id="mais750w"> Mais que 750W</label>
+            </div>
+
+            <div class="filter-group" id="monitorSizes" style="display: none;">
+                <hr>
+                <h3 class="filter-name">Tamanho</h3>
+                <label><input type="checkbox" class="monitorSize" id="19p"> Menos que 20"</label>
+                <br>
+                <label><input type="checkbox" class="monitorSize" id="20p-23p"> De 20" até 550W</label>
+                <br>
+                <label><input type="checkbox" class="monitorSize" id="23p-26p"> De 23" até 26"</label>
+                <br>
+                <label><input type="checkbox" class="monitorSize" id="26p-29p"> De 26" até 29"</label>
+                <br>
+                <label><input type="checkbox" class="monitorSize" id="30p"> Mais que 29"</label>
+            </div>
+            <div class="filter-group" id="monitorResolutions" style="display: none;">
+                <hr>
+                <h3 class="filter-name">Resolução</h3>
+                <label><input type="checkbox" class="monitorResolution" id="HD"> 720p HD</label>
+                <br>
+                <label><input type="checkbox" class="monitorResolution" id="FHD"> 1080p FullHD</label>
+                <br>
+                <label><input type="checkbox" class="monitorResolution" id="UHD"> 4k UltraHD</label>
+            </div>
+            <div class="filter-group" id="monitorHdr" style="display: none;">
+                <hr>
+                <h3 class="filter-name">Possui HDR</h3>
+                <label><input type="checkbox" class="monitorHdr" id="semHDR"> Não</label>
+                <br>
+                <label><input type="checkbox" class="monitorHdr" id="comHDR"> Sim</label>
+            </div>
         </div>
 
         <div class="src-body">
