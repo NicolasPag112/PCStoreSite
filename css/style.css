@@ -5,9 +5,16 @@
     font-family: 'Poppins', sans-serif;
 }
 
+img {
+    width: 70%;
+}
+
+p#paragrafo-teste {
+  color: aqua; 
+}
 
 header{
-    height: 20%;
+    height: 18%;
     width: 100%;
     padding: 5px 60px 5px;
     background: rgb(3, 55, 85);
@@ -58,8 +65,8 @@ body.index {
 
   
 .btn-carrinho{
-    width: 250px;
-    height: 100px;
+    width: 200px;
+    height: 70px;
     background: rgb(37, 37, 155);
     border: 2px solid #ffff;
     outline: none;
@@ -132,4 +139,8 @@ body.index {
 h3#errorValue {
     font-weight: normal;
     font-size: 1em;
+}
+
+label {
+    font-size: 0.95em;
 }

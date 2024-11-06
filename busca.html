@@ -9,7 +9,7 @@
 </head>
 <body class="search">
     <header>
-        <a href="index.html "><img src="imgs/logo.png"></a>
+        <a href="index.html"><img src="imgs/logo.png" id="logo"></a>
         <nav class="navigation">
             <a href="login.html" class="btn-login">Login</a>
             <button class="btn-carrinho" onclick="window.location.href='carrinho.html'">Carrinho</button>
@@ -26,13 +26,15 @@
             <hr>
             <div class="filter-group">
                 <h3 class="filter-name">Preço</h3>
+                <label for="minPrice" style="margin-right: 1.3%;">Val. Mín.</label>
                 <input type="number" id="minPrice" min="0" max="2000" value="0">
-                <label for="minPrice"><span id="minValue">A partir de R$0</span></label>
+                <label for="minPrice" style="margin-left: 1.3%;"><span id="minValue">A partir de R$0</span></label>
 
                 <br>
 
+                <label for="maxPrice">Val. Máx.</label>
                 <input type="number" id="maxPrice" min="0" max="2000" value="2000">
-                <label for="minPrice"><span id="maxValue">Até R$2000</span></label>
+                <label for="maxPrice" style="margin-left: 1.3%;"><span id="maxValue">Até R$2000</span></label>
 
                 <h3 id="errorValue" style="display: none;">Valor mínimo deve ser menor que valor máximo</h3>
             </div>
