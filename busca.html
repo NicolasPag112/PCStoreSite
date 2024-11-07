@@ -18,7 +18,7 @@
 
     <div></div>
 
-    <div class="container">
+    <div class="container-search">
 
     
         <div class="filter-body">
@@ -26,15 +26,15 @@
             <hr>
             <div class="filter-group">
                 <h3 class="filter-name">Preço</h3>
-                <label for="minPrice" style="margin-right: 1.3%;">Val. Mín.</label>
+                <label class="productSearch" for="minPrice" style="margin-right: 1.3%;">Val. Mín.</label>
                 <input type="number" id="minPrice" min="0" max="2000" value="0">
-                <label for="minPrice" style="margin-left: 1.3%;"><span id="minValue">A partir de R$0</span></label>
+                <label class="productSearch" for="minPrice" style="margin-left: 1.3%;"><span id="minValue">A partir de R$0</span></label>
 
                 <br>
 
-                <label for="maxPrice">Val. Máx.</label>
+                <label class="productSearch" for="maxPrice">Val. Máx.</label>
                 <input type="number" id="maxPrice" min="0" max="2000" value="2000">
-                <label for="maxPrice" style="margin-left: 1.3%;"><span id="maxValue">Até R$2000</span></label>
+                <label class="productSearch" for="maxPrice" style="margin-left: 1.3%;"><span id="maxValue">Até R$2000</span></label>
 
                 <h3 id="errorValue" style="display: none;">Valor mínimo deve ser menor que valor máximo</h3>
             </div>
@@ -42,172 +42,172 @@
 
             <div class="filter-group">
                 <h3 class="filter-name">Tipo de Produto</h3>
-                <label><input type="checkbox" class="productType" id="CPU"> Processador</label>
+                <label class="productSearch"><input type="checkbox" class="productType" id="CPU"> Processador</label>
                 <br>
-                <label><input type="checkbox" class="productType" id="GPU"> Placa de Vídeo</label>
+                <label class="productSearch"><input type="checkbox" class="productType" id="GPU"> Placa de Vídeo</label>
                 <br>
-                <label><input type="checkbox" class="productType" id="RAM"> Memória RAM</label>
+                <label class="productSearch"><input type="checkbox" class="productType" id="RAM"> Memória RAM</label>
                 <br>
-                <label><input type="checkbox" class="productType" id="motherBoard"> Placa Mãe</label>
+                <label class="productSearch"><input type="checkbox" class="productType" id="motherBoard"> Placa Mãe</label>
                 <br>
-                <label><input type="checkbox" class="productType" id="SSD-HDD"> SSD/HDD</label>
+                <label class="productSearch"><input type="checkbox" class="productType" id="SSD-HDD"> SSD/HDD</label>
                 <br>
-                <label><input type="checkbox" class="productType" id="PSU"> Fonte de Alimentação</label>
+                <label class="productSearch"><input type="checkbox" class="productType" id="PSU"> Fonte de Alimentação</label>
                 <br>
-                <label><input type="checkbox" class="productType" id="monitor"> Monitor</label>
+                <label class="productSearch"><input type="checkbox" class="productType" id="monitor"> Monitor</label>
             </div>
 
             <div class="filter-group" id="CPUBrands" style="display: none;">
                 <hr>
                 <h3 class="filter-name">Marcas</h3>
-                <label><input type="checkbox" class="CPUBrandType" id="intel"> Intel</label>
+                <label class="productSearch"><input type="checkbox" class="CPUBrandType" id="intel"> Intel</label>
                 <br>
-                <label><input type="checkbox" class="CPUBrandType" id="AMDCPU"> AMD</label>
+                <label class="productSearch"><input type="checkbox" class="CPUBrandType" id="AMDCPU"> AMD</label>
             </div>
             <div class="filter-group" id="IntelModels" style="display: none;">
                 <hr>
                 <h3 class="filter-name">Modelos</h3>
-                <label><input type="checkbox" class="CPUModel" id="i3"> i3</label>
+                <label class="productSearch"><input type="checkbox" class="CPUModel" id="i3"> i3</label>
                 <br>
-                <label><input type="checkbox" class="CPUModel" id="i5"> i5</label>
+                <label class="productSearch"><input type="checkbox" class="CPUModel" id="i5"> i5</label>
                 <br>
-                <label><input type="checkbox" class="CPUModel" id="i7"> i7</label>
+                <label class="productSearch"><input type="checkbox" class="CPUModel" id="i7"> i7</label>
                 <br>
-                <label><input type="checkbox" class="CPUModel" id="i9"> i9</label>
+                <label class="productSearch"><input type="checkbox" class="CPUModel" id="i9"> i9</label>
             </div>
             <div class="filter-group" id="AMDModelsCPU" style="display: none;">
                 <hr>
                 <h3 class="filter-name">Modelos</h3>
-                <label><input type="checkbox" class="CPUModel" id="ryzen3"> Ryzen 3</label>
+                <label class="productSearch"><input type="checkbox" class="CPUModel" id="ryzen3"> Ryzen 3</label>
                 <br>
-                <label><input type="checkbox" class="CPUModel" id="ryzen5"> Ryzen 5</label>
+                <label class="productSearch"><input type="checkbox" class="CPUModel" id="ryzen5"> Ryzen 5</label>
                 <br>
-                <label><input type="checkbox" class="CPUModel" id="ryzen7"> Ryzen 7</label>
+                <label class="productSearch"><input type="checkbox" class="CPUModel" id="ryzen7"> Ryzen 7</label>
                 <br>
-                <label><input type="checkbox" class="CPUModel" id="ryzen9"> Ryzen 9</label>
+                <label class="productSearch"><input type="checkbox" class="CPUModel" id="ryzen9"> Ryzen 9</label>
             </div>
 
             <div class="filter-group" id="GPUBrands" style="display: none;">
                 <hr>
                 <h3 class="filter-name">Marcas</h3>
-                <label><input type="checkbox" class="GPUBrandType" id="Nvidia"> Nvidia</label>
+                <label class="productSearch"><input type="checkbox" class="GPUBrandType" id="Nvidia"> Nvidia</label>
                 <br>
-                <label><input type="checkbox" class="GPUBrandType" id="AMDGPU"> AMD</label>
+                <label class="productSearch"><input type="checkbox" class="GPUBrandType" id="AMDGPU"> AMD</label>
             </div>
             <div class="filter-group" id="NvidiaModels" style="display: none;">
                 <hr>
                 <h3 class="filter-name">Modelos</h3>
-                <label><input type="checkbox" class="GPUModel" id="4050"> RTX 4050</label>
+                <label class="productSearch"><input type="checkbox" class="GPUModel" id="4050"> RTX 4050</label>
                 <br>
-                <label><input type="checkbox" class="GPUModel" id="4060"> RTX 4060</label>
+                <label class="productSearch"><input type="checkbox" class="GPUModel" id="4060"> RTX 4060</label>
                 <br>
-                <label><input type="checkbox" class="GPUModel" id="4070"> RTX 4070</label>
+                <label class="productSearch"><input type="checkbox" class="GPUModel" id="4070"> RTX 4070</label>
                 <br>
-                <label><input type="checkbox" class="GPUModel" id="4080"> RTX 4080</label>
+                <label class="productSearch"><input type="checkbox" class="GPUModel" id="4080"> RTX 4080</label>
                 <br>
-                <label><input type="checkbox" class="GPUModel" id="4090"> RTX 4090</label>
+                <label class="productSearch"><input type="checkbox" class="GPUModel" id="4090"> RTX 4090</label>
             </div>
             <div class="filter-group" id="AMDModelsGPU" style="display: none;">
                 <hr>
                 <h3 class="filter-name">Modelos</h3>
-                <label><input type="checkbox" class="GPUModel" id="7600"> RX 7600</label>
+                <label class="productSearch"><input type="checkbox" class="GPUModel" id="7600"> RX 7600</label>
                 <br>
-                <label><input type="checkbox" class="GPUModel" id="7600XT"> RX 7600 XT</label>
+                <label class="productSearch"><input type="checkbox" class="GPUModel" id="7600XT"> RX 7600 XT</label>
                 <br>
-                <label><input type="checkbox" class="GPUModel" id="7700XT"> RX 7700 XT</label>
+                <label class="productSearch"><input type="checkbox" class="GPUModel" id="7700XT"> RX 7700 XT</label>
                 <br>
-                <label><input type="checkbox" class="GPUModel" id="7800XT"> RX 7800 XT</label>
+                <label class="productSearch"><input type="checkbox" class="GPUModel" id="7800XT"> RX 7800 XT</label>
                 <br>
-                <label><input type="checkbox" class="GPUModel" id="7900XT"> RX 7900 XT</label>
+                <label class="productSearch"><input type="checkbox" class="GPUModel" id="7900XT"> RX 7900 XT</label>
             </div>
 
             <div class="filter-group" id="RAMSizes" style="display: none;">
                 <hr>
                 <h3 class="filter-name">Tamanho</h3>
-                <label><input type="checkbox" class="RAMSize" id="RAM4GB"> 4GB</label>
+                <label class="productSearch"><input type="checkbox" class="RAMSize" id="RAM4GB"> 4GB</label>
                 <br>
-                <label><input type="checkbox" class="RAMSize" id="RAM8GB"> 8GB</label>
+                <label class="productSearch"><input type="checkbox" class="RAMSize" id="RAM8GB"> 8GB</label>
                 <br>
-                <label><input type="checkbox" class="RAMSize" id="RAM16GB"> 16GB</label>
+                <label class="productSearch"><input type="checkbox" class="RAMSize" id="RAM16GB"> 16GB</label>
                 <br>
-                <label><input type="checkbox" class="RAMSize" id="RAM32GB"> 32GB</label>
+                <label class="productSearch"><input type="checkbox" class="RAMSize" id="RAM32GB"> 32GB</label>
             </div>
 
             <div class="filter-group" id="MBBrands" style="display: none;">
                 <hr>
                 <h3 class="filter-name">Suporte de Processadores</h3>
-                <label><input type="checkbox" class="MBBrand" id="IntelMB"> Intel</label>
+                <label class="productSearch"><input type="checkbox" class="MBBrand" id="IntelMB"> Intel</label>
                 <br>
-                <label><input type="checkbox" class="MBBrand" id="AMDMB"> AMD</label>
+                <label class="productSearch"><input type="checkbox" class="MBBrand" id="AMDMB"> AMD</label>
             </div>
 
             <div class="filter-group" id="SHDSizes" style="display: none;">
                 <hr>
                 <h3 class="filter-name">Tamanho</h3>
-                <label><input type="checkbox" class="SHDSize" id="SHD128GB"> 128GB</label>
+                <label class="productSearch"><input type="checkbox" class="SHDSize" id="SHD128GB"> 128GB</label>
                 <br>
-                <label><input type="checkbox" class="SHDSize" id="SHD256GB"> 256GB</label>
+                <label class="productSearch"><input type="checkbox" class="SHDSize" id="SHD256GB"> 256GB</label>
                 <br>
-                <label><input type="checkbox" class="SHDSize" id="SHD512GB"> 512GB</label>
+                <label class="productSearch"><input type="checkbox" class="SHDSize" id="SHD512GB"> 512GB</label>
                 <br>
-                <label><input type="checkbox" class="SHDSize" id="SHD1TB"> 1TB</label>
+                <label class="productSearch"><input type="checkbox" class="SHDSize" id="SHD1TB"> 1TB</label>
                 <br>
-                <label><input type="checkbox" class="SHDSize" id="SHD2TB"> 2TB</label>
+                <label class="productSearch"><input type="checkbox" class="SHDSize" id="SHD2TB"> 2TB</label>
             </div>
             <div class="filter-group" id="SHDSpeeds" style="display: none;">
                 <hr>
                 <h3 class="filter-name">Velocidade</h3>
-                <label><input type="checkbox" class="SHDSpeed" id="menos1gb"> Menos que 1GB/s</label>
+                <label class="productSearch"><input type="checkbox" class="SHDSpeed" id="menos1gb"> Menos que 1GB/s</label>
                 <br>
-                <label><input type="checkbox" class="SHDSpeed" id="1gb-2gb"> De 1GB/s até 2GB/s</label>
+                <label class="productSearch"><input type="checkbox" class="SHDSpeed" id="1gb-2gb"> De 1GB/s até 2GB/s</label>
                 <br>
-                <label><input type="checkbox" class="SHDSpeed" id="2gb-3gb"> De 2GB/s até 3GB/s</label>
+                <label class="productSearch"><input type="checkbox" class="SHDSpeed" id="2gb-3gb"> De 2GB/s até 3GB/s</label>
                 <br>
-                <label><input type="checkbox" class="SHDSpeed" id="mais3gb"> Mais do que 3GB/s</label>
+                <label class="productSearch"><input type="checkbox" class="SHDSpeed" id="mais3gb"> Mais do que 3GB/s</label>
             </div>
             
             <div class="filter-group" id="PSUPowers" style="display: none;">
                 <hr>
                 <h3 class="filter-name">Potência da Fonte</h3>
-                <label><input type="checkbox" class="PSUPower" id="menos450w"> Menos que 450W</label>
+                <label class="productSearch"><input type="checkbox" class="PSUPower" id="menos450w"> Menos que 450W</label>
                 <br>
-                <label><input type="checkbox" class="PSUPower" id="450w-550w"> De 450W até 550W</label>
+                <label class="productSearch"><input type="checkbox" class="PSUPower" id="450w-550w"> De 450W até 550W</label>
                 <br>
-                <label><input type="checkbox" class="PSUPower" id="550w-650w"> De 550W até 650W</label>
+                <label class="productSearch"><input type="checkbox" class="PSUPower" id="550w-650w"> De 550W até 650W</label>
                 <br>
-                <label><input type="checkbox" class="PSUPower" id="650w-750w"> De 650W até 750W</label>
+                <label class="productSearch"><input type="checkbox" class="PSUPower" id="650w-750w"> De 650W até 750W</label>
                 <br>
-                <label><input type="checkbox" class="PSUPower" id="mais750w"> Mais que 750W</label>
+                <label class="productSearch"><input type="checkbox" class="PSUPower" id="mais750w"> Mais que 750W</label>
             </div>
 
             <div class="filter-group" id="monitorSizes" style="display: none;">
                 <hr>
                 <h3 class="filter-name">Tamanho</h3>
-                <label><input type="checkbox" class="monitorSize" id="19p"> Menos que 20"</label>
+                <label class="productSearch"><input type="checkbox" class="monitorSize" id="19p"> Menos que 20"</label>
                 <br>
-                <label><input type="checkbox" class="monitorSize" id="20p-23p"> De 20" até 550W</label>
+                <label class="productSearch"><input type="checkbox" class="monitorSize" id="20p-23p"> De 20" até 23"</label>
                 <br>
-                <label><input type="checkbox" class="monitorSize" id="23p-26p"> De 23" até 26"</label>
+                <label class="productSearch"><input type="checkbox" class="monitorSize" id="23p-26p"> De 23" até 26"</label>
                 <br>
-                <label><input type="checkbox" class="monitorSize" id="26p-29p"> De 26" até 29"</label>
+                <label class="productSearch"><input type="checkbox" class="monitorSize" id="26p-29p"> De 26" até 29"</label>
                 <br>
-                <label><input type="checkbox" class="monitorSize" id="30p"> Mais que 29"</label>
+                <label class="productSearch"><input type="checkbox" class="monitorSize" id="30p"> Mais que 29"</label>
             </div>
             <div class="filter-group" id="monitorResolutions" style="display: none;">
                 <hr>
                 <h3 class="filter-name">Resolução</h3>
-                <label><input type="checkbox" class="monitorResolution" id="HD"> 720p HD</label>
+                <label class="productSearch"><input type="checkbox" class="monitorResolution" id="HD"> 720p HD</label>
                 <br>
-                <label><input type="checkbox" class="monitorResolution" id="FHD"> 1080p FullHD</label>
+                <label class="productSearch"><input type="checkbox" class="monitorResolution" id="FHD"> 1080p FullHD</label>
                 <br>
-                <label><input type="checkbox" class="monitorResolution" id="UHD"> 4k UltraHD</label>
+                <label class="productSearch"><input type="checkbox" class="monitorResolution" id="UHD"> 4k UltraHD</label>
             </div>
             <div class="filter-group" id="monitorHdr" style="display: none;">
                 <hr>
                 <h3 class="filter-name">Possui HDR</h3>
-                <label><input type="checkbox" class="monitorHdr" id="semHDR"> Não</label>
+                <label class="productSearch"><input type="checkbox" class="monitorHdr" id="semHDR"> Não</label>
                 <br>
-                <label><input type="checkbox" class="monitorHdr" id="comHDR"> Sim</label>
+                <label class="productSearch"><input type="checkbox" class="monitorHdr" id="comHDR"> Sim</label>
             </div>
         </div>
 
