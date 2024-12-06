@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EdSdHuzVj8E=",
+  "dgSpecHash": "Erj+FhzHOmc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\nicol\\Documents\\Git\\PCStoreSite\\PCStore\\PCStore.csproj",
+  "projectFilePath": "C:\\Users\\nicol\\Documents\\Git\\Desenvolvimento Web\\PCStore\\PCStore.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nicol\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.8\\microsoft.aspnetcore.openapi.8.0.8.nupkg.sha512",
     "C:\\Users\\nicol\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",

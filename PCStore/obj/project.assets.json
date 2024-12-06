@@ -465,11 +465,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nicol\\Documents\\Git\\PCStoreSite\\PCStore\\PCStore.csproj",
+      "projectUniqueName": "C:\\Users\\nicol\\Documents\\Git\\Desenvolvimento Web\\PCStore\\PCStore.csproj",
       "projectName": "PCStore",
-      "projectPath": "C:\\Users\\nicol\\Documents\\Git\\PCStoreSite\\PCStore\\PCStore.csproj",
+      "projectPath": "C:\\Users\\nicol\\Documents\\Git\\Desenvolvimento Web\\PCStore\\PCStore.csproj",
       "packagesPath": "C:\\Users\\nicol\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nicol\\Documents\\Git\\PCStoreSite\\PCStore\\obj\\",
+      "outputPath": "C:\\Users\\nicol\\Documents\\Git\\Desenvolvimento Web\\PCStore\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\nicol\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -529,7 +529,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.402/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
