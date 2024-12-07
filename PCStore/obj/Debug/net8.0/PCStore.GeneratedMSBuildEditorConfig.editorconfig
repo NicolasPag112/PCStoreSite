@@ -17,3 +17,19 @@ build_property.SupportLocalizedComponentNames =
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = C:\Users\nicol\Documents\Git\Desenvolvimento Web\PCStore
 build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/nicol/Documents/Git/Desenvolvimento Web/PCStore/Views/Home/cadastro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxjYWRhc3Ryby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nicol/Documents/Git/Desenvolvimento Web/PCStore/Views/Home/Error\!.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFcnJvciEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nicol/Documents/Git/Desenvolvimento Web/PCStore/Views/Home/index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxpbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/nicol/Documents/Git/Desenvolvimento Web/PCStore/Views/Home/login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxsb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

@@ -1,0 +1,85 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\nicol\\Documents\\Git\\Desenvolvimento Web\\PCStore\\wwwroot\\css\\cadastro.css",
+      "PackagePath": "staticwebassets\\css\\cadastro.css"
+    },
+    {
+      "Id": "C:\\Users\\nicol\\Documents\\Git\\Desenvolvimento Web\\PCStore\\wwwroot\\css\\card.css",
+      "PackagePath": "staticwebassets\\css\\card.css"
+    },
+    {
+      "Id": "C:\\Users\\nicol\\Documents\\Git\\Desenvolvimento Web\\PCStore\\wwwroot\\css\\index.css",
+      "PackagePath": "staticwebassets\\css\\index.css"
+    },
+    {
+      "Id": "C:\\Users\\nicol\\Documents\\Git\\Desenvolvimento Web\\PCStore\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
+      "Id": "C:\\Users\\nicol\\Documents\\Git\\Desenvolvimento Web\\PCStore\\wwwroot\\css\\produto.css",
+      "PackagePath": "staticwebassets\\css\\produto.css"
+    },
+    {
+      "Id": "C:\\Users\\nicol\\Documents\\Git\\Desenvolvimento Web\\PCStore\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\nicol\\Documents\\Git\\Desenvolvimento Web\\PCStore\\wwwroot\\imgs\\computer.jpg",
+      "PackagePath": "staticwebassets\\imgs\\computer.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nicol\\Documents\\Git\\Desenvolvimento Web\\PCStore\\wwwroot\\imgs\\logo.png",
+      "PackagePath": "staticwebassets\\imgs\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\nicol\\Documents\\Git\\Desenvolvimento Web\\PCStore\\wwwroot\\imgs\\monitor.png",
+      "PackagePath": "staticwebassets\\imgs\\monitor.png"
+    },
+    {
+      "Id": "C:\\Users\\nicol\\Documents\\Git\\Desenvolvimento Web\\PCStore\\wwwroot\\imgs\\monitor1.jpg",
+      "PackagePath": "staticwebassets\\imgs\\monitor1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nicol\\Documents\\Git\\Desenvolvimento Web\\PCStore\\wwwroot\\imgs\\monitor2.jpg",
+      "PackagePath": "staticwebassets\\imgs\\monitor2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nicol\\Documents\\Git\\Desenvolvimento Web\\PCStore\\wwwroot\\imgs\\monitor3.jpg",
+      "PackagePath": "staticwebassets\\imgs\\monitor3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nicol\\Documents\\Git\\Desenvolvimento Web\\PCStore\\wwwroot\\imgs\\monitor4.jpg",
+      "PackagePath": "staticwebassets\\imgs\\monitor4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\nicol\\Documents\\Git\\Desenvolvimento Web\\PCStore\\wwwroot\\js\\busca.js",
+      "PackagePath": "staticwebassets\\js\\busca.js"
+    },
+    {
+      "Id": "C:\\Users\\nicol\\Documents\\Git\\Desenvolvimento Web\\PCStore\\wwwroot\\js\\jquery.js",
+      "PackagePath": "staticwebassets\\js\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\nicol\\Documents\\Git\\Desenvolvimento Web\\PCStore\\wwwroot\\js\\script.js",
+      "PackagePath": "staticwebassets\\js\\script.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.PCStore.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.PCStore.props",
+      "PackagePath": "build\\PCStore.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.PCStore.props",
+      "PackagePath": "buildMultiTargeting\\PCStore.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.PCStore.props",
+      "PackagePath": "buildTransitive\\PCStore.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
