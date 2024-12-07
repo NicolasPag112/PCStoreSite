@@ -2,7 +2,7 @@ using System;
 
 namespace PCStore.Models
 {
-    public class UserCarrinho
+    public class Carrinho
     {
         public int Id { get; set; }
         public int prodId { get; set; }

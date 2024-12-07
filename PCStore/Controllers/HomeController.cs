@@ -30,17 +30,32 @@ namespace PCStore.Controllers
         {
             return View();
         }
+
         [Route("/cadastro")]
         public IActionResult Cadastro()
         {
             return View();
         }
 
-        [Route("/carrinho")]
-        public IActionResult Carrinho()
+        [Route("/produto")]
+        public IActionResult Produto()
         {
             return View();
         }
+        
+        [Route("/busca")]
+        public IActionResult Busca()
+        {
+            return View();
+        }
+
+        [Route("/Usuario/carrinho")]
+        public IActionResult UsuarioCarrinho()
+        {
+            return View();
+        }
+
+        
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

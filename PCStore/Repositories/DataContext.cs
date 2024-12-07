@@ -9,7 +9,7 @@ namespace PCStore.Repositories
         public DataContext(DbContextOptions options) : base(options) {}
         public DbSet<Usuario> Usuarios { get; set; }
         public DbSet<Produto> Produtos { get; set; }
-        public DbSet<UserCarrinho> UserCarrinhos { get; set; }
+        public DbSet<Carrinho> Carrinhos { get; set; }
         
     }
 }

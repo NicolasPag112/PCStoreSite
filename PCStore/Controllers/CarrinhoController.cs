@@ -13,7 +13,7 @@ namespace PCStore.Controllers
     [ApiController]
     [Route("Carrinho")] //Seta a rota para Carrinho
 
-    public class UserCarrinhoController : ControllerBase
+    public class CarrinhoController : ControllerBase
     {
         //Seta um post com rota vazia
         [HttpPost]
@@ -29,7 +29,7 @@ namespace PCStore.Controllers
         [Route("")]
 
         //Função para retornar os produtos no carrinho
-        public async Task<IActionResult> GetCarrinho([FromBody]Usuario model, [FromServices]IUserCarrinhoRepository repository)
+        public async Task<IActionResult> GetCarrinho([FromBody]Usuario model, [FromServices]ICarrinhoRepository repository)
         {
             List<ProdutoCarrinho> _carrinho = await repository.List(model);
 
