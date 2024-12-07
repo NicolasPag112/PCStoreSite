@@ -9,12 +9,12 @@ using System.Text.Json;
 namespace PCStore.Repositories
 {
     // Interfaco do Repositório do carrinho
-    public interface ICarrinhoRepository
+    public interface IUserCarrinhoRepository
     {
         Task<List<ProdutoCarrinho>> List(Usuario usuario);
     }
 
-    public class CarrinhoRepository : ICarrinhoRepository
+    public class UserCarrinhoRepository : IUserCarrinhoRepository
     {
         //Função que retorna todos os itens no carrinho de um determinado usuário
         public async Task<List<ProdutoCarrinho>> List(Usuario usuario)

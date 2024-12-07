@@ -36,6 +36,12 @@ namespace PCStore.Controllers
             return View();
         }
 
+        [Route("/carrinho")]
+        public IActionResult Carrinho()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
