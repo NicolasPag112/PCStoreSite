@@ -5,6 +5,7 @@ using System.Linq;
 using Npgsql;
 using Microsoft.EntityFrameworkCore.Query;
 using System.Text.Json;
+using PCStore.Config;
 
 namespace PCStore.Repositories
 {
@@ -22,10 +23,7 @@ namespace PCStore.Repositories
             //Lista de produtos
             var _produtos = new List<ProdutoCarrinho>();
 
-            //Caminho de conexão do banco de dados
-            string _connectionString = "Host=localhost;Port=5432;Database=postgres;Username=postgres;Password=Admin#123";
-
-            using (var connection = new NpgsqlConnection(_connectionString))
+            using (var connection = new NpgsqlConnection(GlobalSettings.DBPath))
             {
                 //Conectando no banco de dados
                 connection.Open();

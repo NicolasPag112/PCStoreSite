@@ -3,6 +3,7 @@ using PCStore.Models;
 using PCStore.Models.ViewModels;
 using System.Linq;
 using Npgsql;
+using PCStore.Config;
 
 namespace PCStore.Repositories
 {
@@ -29,10 +30,7 @@ namespace PCStore.Repositories
                 Senha = usersenha
             };
 
-            //Caminho de conexão do bando de dados
-            string _connectionString = "Host=localhost;Port=5432;Database=postgres;Username=postgres;Password=Admin#123";
-
-            using (var connection = new NpgsqlConnection(_connectionString))
+            using (var connection = new NpgsqlConnection(GlobalSettings.DBPath))
             {
                 connection.Open();
 
