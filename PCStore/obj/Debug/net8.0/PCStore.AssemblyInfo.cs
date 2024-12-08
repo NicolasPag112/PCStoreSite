@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PCStore")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+286fc1699a67493a7e45bee01baa26a17159948d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5f982201825ab3cac8a8fdd3adbf7ad7fcc9d210")]
 [assembly: System.Reflection.AssemblyProductAttribute("PCStore")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PCStore")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
