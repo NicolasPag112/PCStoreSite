@@ -3,6 +3,7 @@ using System.Text;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using PCStore.Models;
 using PCStore.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -28,6 +29,7 @@ builder.Services.AddAuthentication(options => {
 
 builder.Services.AddDbContext<DataContext>(options =>options.UseNpgsql(builder.Configuration.GetConnectionString("PostgresConnection")));
 builder.Services.AddTransient<IUsuarioRepository, UsuarioRepository>();
+builder.Services.AddTransient<ICarrinhoRepository, CarrinhoRepository>();
 
 builder.Services.AddCors(options =>
 {
