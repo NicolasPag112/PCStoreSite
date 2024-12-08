@@ -49,7 +49,7 @@ namespace PCStore.Controllers
             return View();
         }
 
-        [Route("/Usuario/carrinho")]
+        [Route("/usuario/carrinho")]
         public IActionResult UsuarioCarrinho()
         {
             return View();

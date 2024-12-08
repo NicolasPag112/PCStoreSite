@@ -1,5 +1,8 @@
 const URL = "http://localhost:5066/";
 
+
+
+
 function AtualizaExcecao() {
 
     var strDados = '';
@@ -37,6 +40,13 @@ function AtualizaExcecao() {
     MostraConsulta('RegistraTransacao/FilaExcecoes');
 };
 
+
+$(document).ready(function () {
+    $(".formLogin").submit(function (event) {
+        event.preventDefault(); // Cancela o recarregamento da página, em tese
+        handleLogin(); // Chama a função de login ao clicar no botão
+    });
+});
 
 function handleLogin() {
     //  Dados que serão enviados no corpo da requisição
