@@ -6,19 +6,22 @@ using Npgsql;
 using Microsoft.EntityFrameworkCore.Query;
 using System.Text.Json;
 using PCStore.Config;
+using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.AspNetCore.Mvc;
 
 namespace PCStore.Repositories
 {
     // Interfaco do Repositório do carrinho
     public interface ICarrinhoRepository
     {
-        Task<List<ProdutoCarrinho>> List(Usuario usuario);
+        Task<List<ProdutoCarrinho>> List(Carrinho carrinho);
+        Task<bool> AddItem(Carrinho carrinho);
     }
 
     public class CarrinhoRepository : ICarrinhoRepository
     {
         //Função que retorna todos os itens no carrinho de um determinado usuário
-        public async Task<List<ProdutoCarrinho>> List(Usuario usuario)
+        public async Task<List<ProdutoCarrinho>> List(Carrinho carrinho)
         {
             //Lista de produtos
             var _produtos = new List<ProdutoCarrinho>();
@@ -37,7 +40,7 @@ namespace PCStore.Repositories
 
                 using (var cmd = new NpgsqlCommand(_sql, connection))
                 {
-                    cmd.Parameters.AddWithValue("Id", usuario.Id); //Parametro do id de usuario no select
+                    cmd.Parameters.AddWithValue("Id", carrinho.userId); //Parametro do id de usuario no select
 
                     using (var reader = cmd.ExecuteReader())
                     {
@@ -56,6 +59,30 @@ namespace PCStore.Repositories
                         }
                     }
                     return _produtos;
+                }
+            }
+        }
+        public async Task<bool> AddItem(Carrinho carrinho){
+            using (var connection = new NpgsqlConnection(GlobalSettings.DBPath))
+            {
+                //Conectando no banco de dados
+                connection.Open();
+
+                //Insert para inserir a nova instância no banco de dados
+                var _sql = "INSERT INTO Carrinho ";
+                _sql = _sql + "(idProd, idUser, prodQtd) ";
+                _sql = _sql + "VALUES ";
+                _sql = _sql + "(@prodId, @userId, @prodQtd) ";
+
+                using (var cmd = new NpgsqlCommand(_sql, connection))
+                {
+                    cmd.Parameters.AddWithValue("prodId", carrinho.prodId); //Parametro do id de produto no insert
+                    cmd.Parameters.AddWithValue("userId", carrinho.userId); //Parametro do id de usuário no insert
+                    cmd.Parameters.AddWithValue("prodQtd", carrinho.prodQtd); //Parametro de quantidade de produtos no insert
+
+                    int rowsAffected = await cmd.ExecuteNonQueryAsync(); //Executa o insert
+
+                    return rowsAffected > 0; // Retorna verdadeiro se pelo menos uma linha foi afetada (sucesso)
                 }
             }
         }

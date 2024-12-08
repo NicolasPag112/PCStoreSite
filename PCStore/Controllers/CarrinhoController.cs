@@ -18,10 +18,15 @@ namespace PCStore.Controllers
         //Seta um post com rota vazia
         [HttpPost]
         [Route("")]
-        public IActionResult Create([FromBody]Usuario model, [FromServices] IUsuarioRepository repository)
+        public async Task<IActionResult> AddItem([FromBody]Carrinho model, [FromServices]ICarrinhoRepository repository)
         {
-            //Not Implemented Yet
-            return null;
+            bool _success = await repository.AddItem(model);
+
+            if (!_success) {
+                return BadRequest();
+            }
+
+            return Ok();
         }
 
         //Seta um get para rota vazia
@@ -29,11 +34,21 @@ namespace PCStore.Controllers
         [Route("")]
 
         //Função para retornar os produtos no carrinho
-        public async Task<IActionResult> GetCarrinho([FromBody]Usuario model, [FromServices]ICarrinhoRepository repository)
+        public async Task<IActionResult> GetCarrinho([FromBody]Carrinho model, [FromServices]ICarrinhoRepository repository)
         {
+            if(!ModelState.IsValid){
+                return BadRequest();
+            }
+
             List<ProdutoCarrinho> _carrinho = await repository.List(model);
 
-            return BadRequest();
+            if (!_carrinho.Any())
+            {
+                return BadRequest(_carrinho);
+            }
+
+            return Ok(_carrinho);
+            
         }
     }
     
