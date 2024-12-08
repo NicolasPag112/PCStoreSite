@@ -1,3 +1,71 @@
-<h1>CARRINHO</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/carrinho.css">
+    <title>Carrinho</title>
+</head>
+<body>
+    <section class="header1">
+        <header class="header">
+            <img  class="logo" src="imgs/logo.png">
+    
+            <nav class="navbar">
+                <a href="login" class="btn-perfil">Perfil</a>
+                <a href="#" class="btn-contato">Contato</a>
+                <a href="#" class="btn-favoritos">Favoritos</a>
+                <a href="usuario/carrinho" class="btn-carrinho">Carrinho</a>
+            </nav>
+        </header>
+    
+        <div>
+            
+            <div class="container-index-btns">
+    
+                    <button class="dept-btn">Departamentosㅤ☰</button>
+    
+                    <div class="container">
+                        <input type="text" placeholder="Search...">
+                        <div class="search"></div>
+                      </div>
+    
+    
+            </div>
+        </div>
+      </section>
 
-<button href="/">home</button>
+      <main>
+        <h1>Meu Carrinho</h1>
+        <div class="cart-container">
+            <!-- Área de produtos -->
+            <div class="cart-items">
+                <div class="item">
+                    <img src="produto.jpg" alt="Produto">
+                    <div class="item-info">
+                        <h2>Produto X</h2>
+                        <p>Descrição do produto.</p>
+                        <p>Preço: R$ 7.799,99</p>
+                    </div>
+                    <div class="item-actions">
+                        <button>-</button>
+                        <span>1</span>
+                        <button>+</button>
+                        <button>Remover</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Resumo -->
+            <div class="cart-summary">
+                <h2>Resumo</h2>
+                <p>Subtotal: R$ 9.176,46</p>
+                <p>Desconto: R$ 1.376,47</p>
+                <p><strong>Total: R$ 7.799,99</strong></p>
+                <button>Finalizar Pedido</button>
+            </div>
+        </div>
+    </main>
+
+      
+</body>
+</html>
