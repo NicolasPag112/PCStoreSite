@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\nicol\\Documents\\Git\\Desenvolvimento Web\\PCStore\\wwwroot\\css\\busca.css",
+      "PackagePath": "staticwebassets\\css\\busca.css"
+    },
+    {
       "Id": "C:\\Users\\nicol\\Documents\\Git\\Desenvolvimento Web\\PCStore\\wwwroot\\css\\cadastro.css",
       "PackagePath": "staticwebassets\\css\\cadastro.css"
     },
