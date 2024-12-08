@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "03dU2JqlTXzm9E4CMJndxaJGr/nCSltsINLtGIbArCc=",
+  "Hash": "rYQKRmwny08eZxQLNdjn/dNqhNJHuq0P3O91/x+xwBY=",
   "Source": "PCStore",
   "BasePath": "_content/PCStore",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\card.css"
+    },
+    {
+      "Identity": "C:\\Users\\nicol\\Documents\\Git\\Desenvolvimento Web\\PCStore\\wwwroot\\css\\carrinho.css",
+      "SourceId": "PCStore",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\nicol\\Documents\\Git\\Desenvolvimento Web\\PCStore\\wwwroot\\",
+      "BasePath": "_content/PCStore",
+      "RelativePath": "css/carrinho.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\carrinho.css"
     },
     {
       "Identity": "C:\\Users\\nicol\\Documents\\Git\\Desenvolvimento Web\\PCStore\\wwwroot\\css\\index.css",
