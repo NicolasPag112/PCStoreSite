@@ -11,16 +11,10 @@ namespace PCStore.Repositories
     public interface IUsuarioRepository 
     {
         Task<Usuario?> Login(string email, string senha);
-        void Create(Usuario usuario);
     }
 
     public class UsuarioRepository : IUsuarioRepository
     {
-        public void Create(Usuario usuario)
-        {
-            //Not implemented yet
-        }
-
         //Função de Login de Usuário
         public async Task<Usuario?> Login(string useremail, string usersenha)
         {

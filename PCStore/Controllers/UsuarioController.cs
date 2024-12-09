@@ -15,20 +15,6 @@ namespace PCStore.Controllers
     [Route("usuario")]
     public class UsuarioController : ControllerBase
     {
-        //Seta um post com rota vazia
-        [HttpPost]
-        [Route("")]
-        public IActionResult Create([FromBody]Usuario model, [FromServices] IUsuarioRepository repository)
-        {
-            if(!ModelState.IsValid){
-                return BadRequest();
-            }
-
-            repository.Create(model);
-
-            return Ok();
-        }
-
         //Seta um post para a rota login
         [HttpPost]
         [Route("login")]
