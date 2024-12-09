@@ -28,7 +28,9 @@ namespace PCStore.Controllers
             }
 
             //Chama o repositório para fazer o teste de login
+#pragma warning disable CS8600 // Converting null literal or possible null value to non-nullable type.
             Usuario usuario = await repository.Login(model.Email, model.Senha);
+#pragma warning restore CS8600 // Converting null literal or possible null value to non-nullable type.
 
             //Se nulo, não autoriza o login
             if (usuario == null){
